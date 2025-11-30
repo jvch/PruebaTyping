@@ -1,0 +1,8 @@
+<body>
+    <h1>Hello World!</h1>
+    <p>This is a sample HTML page.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+</body>

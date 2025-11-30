@@ -1,0 +1,113 @@
+/* ================================
+   Body / Page Setup
+   ================================ */
+body {
+    font-weight: bolder;
+    margin: 0;
+    background-color: #00ffff; /* Bright cyan background */
+    font-family: "Courier New", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+}
+
+/* ================================
+   90s-style Container
+   ================================ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffff99; /* pale yellow background */
+    border: 4px solid #ff0000; /* bright red pixelated border */
+    box-shadow: 4px 4px 0 #000000; /* blocky shadow */
+}
+
+/* ================================
+   Typing Area
+   ================================ */
+.text-wrapper {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    border: 2px solid #0000ff; /* bold blue border */
+    background-color: #ffffff; /* classic white input area */
+    padding: 0; /* remove horizontal padding */
+    overflow: auto;
+    font-size: 20px;
+    line-height: 1.4;
+    box-sizing: border-box; /* include borders in width */
+}
+
+/* ================================
+   Typing Text (Foreground)
+   ================================ */
+.typing-text {
+    font-family: "Courier New", monospace;
+    white-space: pre;
+    margin: 0;
+    color: #ff0000; /* red foreground text */
+}
+
+/* ================================
+   Background Text
+   ================================ */
+.background-text {
+    color: #999999; /* faded gray background letters */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* ================================
+   Overlay Text
+   ================================ */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    margin: 0; /* remove default margin */
+    color: #000000;
+}
+
+/* ================================
+   Wrong Letters
+   ================================ */
+.wrong {
+    color: #ff00ff; /* bright magenta mistakes */
+    font-weight: bold;
+}
+
+/* ================================
+   Hidden Textarea for Input
+   ================================ */
+.hidden-input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+    resize: none;
+}
+
+/* ================================
+   Blinking Caret (Classic)
+   ================================ */
+.caret {
+    display: inline-block;
+    width: 1ch;
+    background-color: #000000; /* solid black caret */
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { background-color: transparent; }
+}
